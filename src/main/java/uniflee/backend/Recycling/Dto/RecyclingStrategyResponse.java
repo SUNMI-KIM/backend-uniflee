@@ -12,7 +12,9 @@ import lombok.Getter;
 public class RecyclingStrategyResponse {
     @Schema(description = "재활용품 포인트", example = "5")
     private int point;
-    @Schema
+    @Schema(description = "재활용품 이름", example = "PE")
+    private String displayName;
+    @Schema(description = "탄소 절감량", example = "0.3")
     private double co2;
     @Schema(description = "재활용품 배출법 1", example = "이렇게 하세요")
     private String disposalInstructions1;  // 분리 배출법

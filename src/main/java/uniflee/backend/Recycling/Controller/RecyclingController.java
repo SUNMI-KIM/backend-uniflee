@@ -53,6 +53,7 @@ public class RecyclingController {
         RecyclingStrategyResponse response = RecyclingStrategyResponse.builder()
                 .point(type.getPoints())
                 .co2(type.getCo2())
+                .displayName(type.getDisplayName())
                 .disposalInstructions1(type.getDisposalInstructions1())
                 .disposalInstructions2(type.getDisposalInstructions2())
                 .disposalInstructions3(type.getDisposalInstructions3())
